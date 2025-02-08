@@ -1,14 +1,24 @@
 import './Navbar.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import useDetectView from '../Hook/useDetectView';
+import useDetectView from '../Utils/Hook/useDetectView';
 import { View } from '../../data/constant';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [svgSize, setSvgSize] = useState({ width: 50, height: 50 }); // Default desktop size
   const currentView = useDetectView();
 
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  // Update SVG size based on view
+  useEffect(() => {
+    if (currentView === View.Mobile) {
+      setSvgSize({ width: 25, height: 25 });
+    } else {
+      setSvgSize({ width: 50, height: 50 });
+    }
+  }, [currentView]);
 
   // Framer Motion animation variants
   const backdropVariants = {
@@ -27,7 +37,7 @@ function Navbar() {
     exit: (i) => ({
       x: '-100%',
       opacity: 0,
-      transition: { delay: (2 - i) * 0.2, duration: 0.5, ease: 'easeIn' }, // Reverse delay order
+      transition: { delay: (2 - i) * 0.2, duration: 0.5, ease: 'easeIn' },
     }),
   };
 
@@ -47,7 +57,7 @@ function Navbar() {
 
       {/* Hamburger menu */}
       <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleMenu}>
-        <svg width="50" height="50" viewBox="0 0 100 100">
+        <svg width={svgSize.width} height={svgSize.height} viewBox="0 0 100 100">
           <path className="line top" d="M 20,30 H 80" />
           <path className="line middle" d="M 20,50 H 80" />
           <path className="line bottom" d="M 20,70 H 80" />
@@ -68,7 +78,7 @@ function Navbar() {
               {['About', 'Projects', 'Contact'].map((item, i) => (
                 <motion.li
                   key={item}
-                  custom={i} // Used for staggered exit animation
+                  custom={i}
                   initial="hidden"
                   animate="visible"
                   exit="exit"

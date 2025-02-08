@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { View } from '../../data/constant';
+import { View } from '../../../data/constant';
 
 const BREAKPOINTS = {
   MOBILE: 768,

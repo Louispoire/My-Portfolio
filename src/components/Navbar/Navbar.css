@@ -1,5 +1,5 @@
 .navbar {
-     position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -55,7 +55,7 @@ a:hover{
 .line {
     stroke-width: 2;
     stroke-linecap: round;
-    stroke: black;
+    stroke: #020100;
     transition: all 500ms;
 }
 
@@ -117,7 +117,7 @@ a:hover{
 
 .fullscreen-links a {
     font-size: 2rem;
-    color: black;
+    color: #020100;
     text-decoration: none;
 }
 
@@ -131,9 +131,33 @@ a:hover{
         display: block;
     }
 
+    .fullscreen-menu{
+        padding-top: 2rem;
+    }
+
     .nav-title {
-        color: black;
         font-size: 2rem;
+        padding-left: 2rem;
+        padding-right: 0rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .fullscreen-menu{
+        padding-top: 2rem;
+    }
+
+    .nav-title {
+        font-size: 1rem;
         padding-left: 2rem;
         padding-right: 0rem;
         font-weight: 500;
