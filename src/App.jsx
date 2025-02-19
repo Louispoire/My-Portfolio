@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-import Projects from './components/Projects/Project'
+import Projects from './components/Projects/Projects'
 import About from './components/About/About'
 import TypingAnimation from './components/Utils/Animations/TypingAnimation/TypingAnimation'
 
