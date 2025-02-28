@@ -1,0 +1,78 @@
+/* Main About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 4rem 2rem;
+}
+
+/* About Content Container */
+.about-container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Section */
+.about-text {
+    flex: 1;
+    text-align: left;
+    padding: 1rem;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Profile Picture Container */
+.profile-container {
+    flex: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Prevents stretching */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Smooth Floating Effect */
+.profile-pic:hover {
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-container {
+        margin-top: 1.5rem;
+    }
+
+    .profile-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
