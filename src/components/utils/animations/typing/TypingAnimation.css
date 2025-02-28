@@ -26,6 +26,9 @@
 }
 
 @media (max-width: 768px) {
+    .content-wrapper{
+        padding-left: 1rem;
+    }
     .blinking-cursor {
         font-size: 1.5rem;
     }

@@ -1,16 +1,23 @@
-/* Ensure content grows with page */
-#root {
-  min-height: 100vh;
+:root, [data-theme="dark"] {
+  transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
 }
 
-/* Intro Section */
-.section-one {
-  height: 75vh;
+.section {
+  min-height: 100vh; /* Ensure each section fills the viewport */
+  display: flex;
+  align-items: center;
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.separator{
+  min-height: 30vh;
 }
 
 @media (max-width: 768px) {
-  .section-one {
-    height: 50vh;
+  .section {
+    min-height: 75vh; /* Ensure each section fills the viewport */
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -22,7 +29,8 @@
   width: 100%;
   height: 100vh;
   /* background: linear-gradient(135deg, #8f94fb, #4e54c8); */
-  background: var(--very-white);
+  background-color: var(--bg-color);
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
   overflow: hidden;
   z-index: -1;
 }
@@ -43,8 +51,9 @@
   list-style: none;
   width: 20px;
   height: 20px;
-  background: var(--text-primary); /* 20% opacity */
-  opacity: 0.2;
+  background-color: var(--text-primary); /* 20% opacity */
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+  opacity: 0.3;
   animation: animate 25s linear infinite;
   bottom: -150px;
 }
@@ -127,7 +136,7 @@
 @keyframes animate {
   0% {
     transform: translateY(0) rotate(0deg);
-    opacity: 0.1;
+    opacity: 0.2;
     border-radius: 0;
   }
 
@@ -135,5 +144,35 @@
     transform: translateY(-100vh) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
+  }
+}
+
+.slanted-bg  {
+  position: relative;
+  z-index: 1;
+  background-color: var(--bg-alt);
+  
+  &:before,
+  &:after {
+    background: inherit;
+    content: '';
+    display: block;
+    height: 75%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+  }
+
+  &:before {
+    top: 0;
+    transform: skewY(-3deg);
+    transform-origin: 0% 0;
+  }
+  
+  &:after {
+    bottom: 0;
+    transform: skewY(0deg);
+    transform-origin: 100%;
   }
 }

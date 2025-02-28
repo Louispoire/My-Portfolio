@@ -1,19 +1,44 @@
-.projects-card-container{
+.projects-container {
     padding: 0 5rem;
 }
 
 .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 2rem;
     max-width: auto;
     margin: 0 auto;
     justify-items: start;
 }
-  
-  /* Responsive Design */
+
+/* ------------------- Responsive Design ------------------- */
+
+/* QUITE LARGE TABLET */
+@media (max-width: 1440px) {
+
+}
+
+/* LARGE TABLET */
+@media (max-width: 1280px) {
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    }
+}
+
+/* TABLET */
+@media (max-width: 1024px) {
+    .projects-container {
+        padding: 0 3rem;
+    }
+
+    .card-grid {
+        grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
+    }
+}
+
+/* PHONE */
 @media (max-width: 768px) {
-    .projects-card-container{
+    .projects-container {
         padding: 0 1rem;
     }
 

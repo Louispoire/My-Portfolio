@@ -6,6 +6,11 @@ function Footer() {
 
   return (
     <footer className="footer">
+      <div className='footer-links'>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
       <div className="social-media-icons">
         <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
           <FaFacebook />
