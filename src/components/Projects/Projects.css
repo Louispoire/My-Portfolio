@@ -1,0 +1,23 @@
+.projects-card-container{
+    padding: 0 5rem;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: auto;
+    margin: 0 auto;
+    justify-items: start;
+}
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .projects-card-container{
+        padding: 0 1rem;
+    }
+
+    .card-grid {
+        grid-template-columns: 2fr;
+    }
+}

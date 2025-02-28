@@ -1,5 +1,5 @@
 .navbar {
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
@@ -8,7 +8,7 @@
     align-items: center;
     padding: 1rem 0;
     z-index: 1000; /* Proper stacking above page content */
-    background-color: white; /* Ensure it's visible and doesn’t blend with the red */
+    background-color: transparent; /* Ensure it's visible and doesn’t blend with the red */
 }
 
 /* Navbar links */
@@ -21,19 +21,19 @@
 a {
     display: inline-block; /* or block if you want full-width clickable links */
     font-weight: 300;
-    color: #020100;
-    font-size: 1.3rem;
+    color: var(--text-primary);
+    font-size: 2rem;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     text-decoration: none;
 }
 
 a:hover{
     transform: scale(1.1);
-    color: #235789;
+    color: #14248a;
 }
 /* Title styling */
 .nav-title {
-    color: #020100;
+    color: var(--text-primary);;
     font-size: 2rem;
     padding-right: 2rem;
     font-weight: 500;
@@ -48,14 +48,14 @@ a:hover{
     position: fixed;
     top: 1rem;
     right: 2rem;
-    color: #020100;
+    color: var(--text-primary);;
     z-index: 9999;
 }
 
 .line {
     stroke-width: 2;
     stroke-linecap: round;
-    stroke: #020100;
+    stroke: var(--text-primary);;
     transition: all 500ms;
 }
 

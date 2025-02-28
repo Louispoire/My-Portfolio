@@ -3,19 +3,19 @@
     align-items: center; /* Vertical centering */
     justify-content: flex-start; /* Align content to the left */
     height: 100%; /* Make it take full height of the section */
-    padding-left: 2rem; /* Adjust left padding as needed */
+    padding-left: 5rem; /* Adjust left padding as needed */
 }
 
 .blinking-cursor {
     font-weight: bold;
     font-size: 3.5rem;
-    color: #020100;
+    color: var(--text-primary);;
     animation: blink 0.7s steps(2, start) infinite;
 }
 
 .animated-text {
     font-size: 3.5rem;
-    color: #020100;
+    color: var(--text-primary);;
     text-align: center;
 }
 
@@ -28,13 +28,9 @@
 @media (max-width: 768px) {
     .blinking-cursor {
         font-size: 1.5rem;
-        color: #020100;
-        animation: blink 0.7s steps(2, start) infinite;
     }
     
     .animated-text {
         font-size: 1.5rem;
-        color: #020100;
-        text-align: center;
     }
 }
