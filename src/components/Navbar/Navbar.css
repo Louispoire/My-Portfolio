@@ -7,8 +7,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-    z-index: 1000; /* Proper stacking above page content */
-    background-color: transparent; /* Ensure it's visible and doesn’t blend with the red */
+    z-index: 1000;
+    background-color: transparent;
 }
 
 /* Navbar links */
@@ -19,25 +19,77 @@
 }
 
 a {
-    display: inline-block; /* or block if you want full-width clickable links */
     font-weight: 300;
+    cursor: pointer;
     color: var(--text-primary);
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     text-decoration: none;
 }
 
-a:hover{
-    transform: scale(1.1);
-    color: #14248a;
+a:hover {
+    color: var(--hover-color);
 }
-/* Title styling */
+
+/* Title + Theme Toggle Container */
+.nav-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-right: 2rem;
+}
+
+/* Dark Mode Toggle */
+.nav-theme-mode {
+    display: flex;
+    /* Ensures proper alignment */
+    align-items: center;
+    /* Centers vertically */
+    justify-content: center;
+    /* Centers horizontally */
+    text-align: center;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-primary);
+    transition: color 0.3s ease;
+    /* Makes sure it takes full height */
+}
+
+.nav-theme-mode:hover {
+    color: var(--hover-color);
+}
+
+/* Title Styling */
 .nav-title {
-    color: var(--text-primary);;
-    font-size: 2rem;
-    padding-right: 2rem;
+    color: var(--text-primary);
+    font-size: 1.5rem;
     font-weight: 500;
     z-index: 1;
+}
+
+.static {
+    position: static;
+    margin-right: 1rem;
+}
+
+.fixed {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+}
+
+.mobile-message{
+    display: flex;
+    align-items: center;
+    /* Centers vertically */
+    justify-content: center;
+}
+
+.heart-icon{
+    margin: 0 0.3rem;
+    color: #ff7c7c;
 }
 
 /* --------------------------- HAMBURGER --------------------------- */
@@ -45,17 +97,16 @@ a:hover{
 .hamburger-menu {
     cursor: pointer;
     display: none;
-    position: fixed;
-    top: 1rem;
-    right: 2rem;
-    color: var(--text-primary);;
+    color: var(--text-primary);
+    ;
     z-index: 9999;
 }
 
 .line {
-    stroke-width: 2;
+    stroke-width: 4;
     stroke-linecap: round;
-    stroke: var(--text-primary);;
+    stroke: var(--text-primary);
+    ;
     transition: all 500ms;
 }
 
@@ -97,7 +148,7 @@ a:hover{
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #f4f7f5;
+    background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,11 +168,11 @@ a:hover{
 
 .fullscreen-links a {
     font-size: 2rem;
-    color: #020100;
+    color: var(--text-primary);
     text-decoration: none;
 }
 
-/* Responsive Design for Small Screens */
+/* Responsive Design */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -131,35 +182,17 @@ a:hover{
         display: block;
     }
 
-    .fullscreen-menu{
+    .fullscreen-menu {
         padding-top: 2rem;
     }
 
-    .nav-title {
-        font-size: 2rem;
-        padding-left: 2rem;
-        padding-right: 0rem;
-        font-weight: 500;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .fullscreen-menu{
-        padding-top: 2rem;
+    .nav-theme-mode {
+        font-size: 1.5rem;
     }
 
     .nav-title {
-        font-size: 1rem;
-        padding-left: 2rem;
-        padding-right: 0rem;
+        font-size: 1.5rem;
+        margin-left: 1rem;
         font-weight: 500;
     }
 }

@@ -2,9 +2,9 @@ import './TypingAnimation.css';
 import React, { useState, useEffect } from 'react';
 
 const phrases = [
-  "Build",
   "I am a developer.",
-  "Let's build something amazing together!"
+  "Building modern tools.",
+  "Simple, efficient, clean."
 ];
 
 function TypingAnimation() {

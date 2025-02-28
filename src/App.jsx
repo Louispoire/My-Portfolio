@@ -6,7 +6,6 @@ import Projects from './components/Projects/Projects'
 import About from './components/about/About'
 import TypingAnimation from './components/utils/animations/typing/TypingAnimation'
 
-
 function App() {
   return (
     <>
@@ -29,17 +28,25 @@ function App() {
       {/* Scrollable Content */}
       <div className="content">
         <Navbar />
-        <div className='section-one'>
+
+        <div className='section'>
           <TypingAnimation />
         </div>
-        <div>
+
+        <div id="projects">
           <Projects />
         </div>
-        <div>
-          <About />
-        </div>
-        <div>
-          <Footer />
+        <div className="separator" />
+        <div className="slanted-bg">
+          <div id="about">
+            <About />
+          </div>
+          <div id="contact">
+
+          </div>
+          <div className='footer'>
+            <Footer />
+          </div>
         </div>
       </div>
     </>
