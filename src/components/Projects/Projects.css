@@ -1,132 +1,23 @@
-.projects {
-    text-align: left;
-    padding: 4rem 5rem;
+.projects-card-container{
+    padding: 0 5rem;
 }
 
-/* Grid system: max 4 per row, left-aligned */
-.projects-grid {
+.card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    /* Ensures responsiveness */
-    max-width: 1300px;
-    /* Adjust width to avoid excessive stretching */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
-    /* Slightly reduce the gap */
-    justify-content: center;
-    /* This centers the grid content */
-    align-items: center;
+    max-width: auto;
     margin: 0 auto;
-    /* Ensures it's properly centered */
+    justify-items: start;
 }
-
-/* Set a fixed size for each tile */
-.project-tile {
-    position: relative;
-    width: 500px;
-    /* Increased size */
-    height: 500px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* Ensure responsiveness on smaller screens */
-@media (max-width: 1024px) {
-    .projects-grid {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        /* Adjust for mobile */
-        gap: 1rem;
-        /* Reduce gap for smaller screens */
-        padding: 0 1rem;
-        /* Remove excessive left-padding */
-    }
-}
-
+  
+  /* Responsive Design */
 @media (max-width: 768px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-        /* 2 items per row on mobile */
+    .projects-card-container{
+        padding: 0 1rem;
     }
-}
 
-@media (max-width: 480px) {
-    .projects-grid {
-        grid-template-columns: repeat(1, 1fr);
-        /* 1 item per row on smaller screens */
+    .card-grid {
+        grid-template-columns: 2fr;
     }
-}
-
-/* Tile hover effect */
-.project-tile:hover {
-    transform: scale(1.05);
-}
-
-/* Dark overlay effect */
-.project-tile::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.project-tile:hover::before {
-    opacity: 1;
-}
-
-/* Content appears on hover */
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity 0.7s ease-in-out;
-    text-align: center;
-    padding: 1rem;
-}
-
-.project-tile:hover .overlay {
-    opacity: 1;
-}
-
-/* Title and description */
-.overlay h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.overlay p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-/* Slick button */
-.overlay button {
-    background: var(--accent-color);
-    border: none;
-    color: white;
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out;
-}
-
-.overlay button:hover {
-    background: var(--hover-color);
 }
