@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './components/navbar/Navbar'
-import Footer from './components/footer/Footer'
-import Projects from './components/projects/Projects'
-import About from './components/about/About'
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
+import Projects from './components/Projects/Projects'
+import About from './components/About/About'
 import TypingAnimation from './components/utils/animations/typing/TypingAnimation'
 
 function App() {

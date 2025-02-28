@@ -3,7 +3,7 @@ import './Projects.css';
 import counterIcon from '../../assets/swift_counter_icon.png';
 import simdevWebsiteLight from '../../assets/SIMDEV_logo_light.png';
 import simdevWebsiteDark from '../../assets/SIMDEV_logo_dark.png';
-import Card from '../projects/Card';
+import Card from './Card';
 
 function Projects() {
   const [theme, setTheme] = useState(document.documentElement.getAttribute('data-theme') || 'light');
