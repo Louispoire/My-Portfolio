@@ -1,10 +1,10 @@
 import { useState } from 'react'
 import './App.css'
-import Navbar from './content/navbar/Navbar'
-import Footer from './content/footer/Footer'
-import Projects from './content/projects/Projects'
-import About from './content/about/About'
-import TypingAnimation from './content/utils/animations/typing/TypingAnimation'
+import Navbar from './components/navbar/Navbar'
+import Footer from './components/footer/Footer'
+import Projects from './components/projects/Projects'
+import About from './components/about/About'
+import TypingAnimation from './components/utils/animations/typing/TypingAnimation'
 
 function App() {
   return (
