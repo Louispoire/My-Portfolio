@@ -1,7 +1,7 @@
 import './Navbar.css';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import useDetectView from '../utils/Hook/useDetectView';
+import useDetectView from '../utils/hook/useDetectView';
 import { View } from '../../data/constant';
 import { FaMoon, FaSun, FaHeart } from "react-icons/fa";
 
