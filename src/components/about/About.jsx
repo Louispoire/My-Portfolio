@@ -1,6 +1,7 @@
 import './About.css';
 import { motion } from 'framer-motion';
 import profilePic from '../../assets/profile.JPG'; // Make sure the image exists in your assets folder
+import {FaEnvelope} from 'react-icons/fa';
 
 function About() {
   return (
@@ -14,6 +15,11 @@ function About() {
             I specialize in front-end development, UI/UX, and making smooth animations. 
             When I'm not coding, you can find me exploring new technologies and working on creative projects.
           </p>
+          <div className='contact-section'>
+            <FaEnvelope className="mail-icon" /> 
+            <p>louis-philippe.dev@gmail.com</p>
+          </div>
+          
         </div>
 
         {/* Animated Profile Picture */}

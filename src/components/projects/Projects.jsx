@@ -30,15 +30,18 @@ function Projects() {
       description: "Made in Typescript, ReactJs, and NodeJs", 
       bgColor: "#ff7c7c", 
       image: theme === 'light' ? simdevWebsiteLight : simdevWebsiteDark,
-      timestamp: '2023-2024'
+      timestamp: '2023-2024',
+      type: 'website', 
+      link: 'https://simdev.ca/'
     },
     { 
       id: 2,
       title: "Swift Counter", 
-      description: "Another great one.", 
+      description: "A modern and elegant iOS/Android counter app", 
       bgColor: "#6c5ce7", 
       image: counterIcon, 
-      timestamp: '2024-2025'
+      timestamp: '2024-2025',
+      type: 'app',
     }
   ];
 
@@ -53,8 +56,12 @@ function Projects() {
             key={project.id}
             title={project.title}
             description={project.description}
-            yearBuilt={project.timestamp}
+            timestamp={project.timestamp}
             image={project.image}
+            type={project.type}
+            link={project.link}
+            androidLink={project.androidLink}
+            iOSLink={project.iOSLink}
           />
         ))}
       </div>
