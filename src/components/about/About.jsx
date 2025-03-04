@@ -1,6 +1,6 @@
 import './About.css';
 import { motion } from 'framer-motion';
-import profilePic from '../../assets/profile.JPG'; // Make sure the image exists in your assets folder
+import profilePic from '../../assets/profile.jpg'; // Make sure the image exists in your assets folder
 import {FaEnvelope} from 'react-icons/fa';
 
 function About() {
@@ -12,12 +12,12 @@ function About() {
           <h2>About Me</h2>
           <p>
             Hi! I'm Louis-Philippe, a passionate developer who loves creating interactive experiences. 
-            I specialize in front-end development, UI/UX, and making smooth animations. 
+            I love creating simple and modern app, as well as making feature packed websites.
             When I'm not coding, you can find me exploring new technologies and working on creative projects.
           </p>
           <div className='contact-section'>
             <FaEnvelope className="mail-icon" /> 
-            <p><a href="mailto:louis-philippe.dev@gmail.com">louis-philippe.dev@gmail.com</a></p>
+            <p><a href="mailto:louis-philippe.dev@gmail.com">louisphilippe.dev@gmail.com</a></p>
           </div>
           
         </div>
