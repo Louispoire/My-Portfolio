@@ -1,28 +1,13 @@
 import React from 'react';
 import './Card.css';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function Card({ title, description, timestamp, image, type, link, androidLink, iOSLink }) {
+  const navigate = useNavigate();
+
 
   const navigateToLink = () => {
-      window.open(link, '_blank', 'noopener,noreferrer');
-
-    /* CODE TO OPEN APP
-    else if (type === 'app') {
-      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-      if (/android/i.test(userAgent) && androidLink) {
-        console.log("Opening Android App:", androidLink);
-        window.open(androidLink, '_blank', 'noopener,noreferrer');
-      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream && iOSLink) {
-        console.log("Opening iOS App:", iOSLink);
-        window.open(iOSLink, '_blank', 'noopener,noreferrer');
-      } else {
-        alert("This app is available only on mobile devices.");
-      }
-    } else {
-      console.log("No valid link found.");
-    }
-      */
+    navigate(link);
   };
 
   return (

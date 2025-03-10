@@ -7,7 +7,7 @@ export const View = {
 
 export const links = {
   facebook: " ",
-  linkedin: "https://www.linkedin.com/company/construction-simdev-inc-",
+  linkedin: " ",
   twitter: " ",
   bluesky: " ",
 }

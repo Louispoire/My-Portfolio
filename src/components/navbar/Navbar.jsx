@@ -108,7 +108,7 @@ function Navbar() {
           )}
 
           {/* Website Title */}
-          <a className="home-button" onClick={() => window.open('/', '_blank', 'noopener,noreferrer')}><div className="nav-title">Louis-Philippe.</div></a>
+          <a className="home-button" onClick={() => navigate('/')}><div className="nav-title">Louis-Philippe.</div></a>
         </div>
 
         {/* Hamburger Menu */}
