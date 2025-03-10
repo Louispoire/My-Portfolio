@@ -17,7 +17,7 @@ function About() {
           </p>
           <div className='contact-section'>
             <FaEnvelope className="mail-icon" /> 
-            <p><a href="mailto:louis-philippe.dev@gmail.com">louisphilippe.dev@gmail.com</a></p>
+            <p><a className='mail-link' href="mailto:louis-philippe.dev@gmail.com">louisphilippe.dev@gmail.com</a></p>
           </div>
           
         </div>

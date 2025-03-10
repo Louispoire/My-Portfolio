@@ -32,7 +32,7 @@ function Projects() {
       image: theme === 'light' ? simdevWebsiteLight : simdevWebsiteDark,
       timestamp: '2023-2024',
       type: 'website', 
-      link: 'https://simdev.ca/'
+      link: '/simdev/'
     },
     { 
       id: 2,
@@ -42,6 +42,7 @@ function Projects() {
       image: counterIcon, 
       timestamp: '2024-2025',
       type: 'app',
+      link: '/swift-counter/'
     }
   ];
 

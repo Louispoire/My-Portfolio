@@ -18,7 +18,11 @@
     list-style-type: none;
 }
 
-a {
+.home-button:hover{
+    cursor: pointer;
+}
+
+.nav-link {
     font-weight: 300;
     cursor: pointer;
     color: var(--text-primary);
@@ -27,7 +31,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.nav-link:hover {
     color: var(--hover-color);
 }
 

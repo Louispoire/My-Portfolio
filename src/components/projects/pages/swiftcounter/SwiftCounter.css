@@ -1,0 +1,152 @@
+.sc-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.sc-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.sc-description {
+    text-align: left;
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    max-width: 600px;
+}
+
+.sc-mockups {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.device-frame {
+    position: relative;
+    width: 250px;
+    /* Adjust based on the frame image */
+    height: 500px;
+    /* Adjust based on the frame image */
+}
+
+.phone-frame {
+    width: 100%;
+    height: auto;
+}
+
+.sc-features {
+    text-align: left;
+    max-width: 600px;
+    margin: 2rem 0;
+}
+
+.sc-features h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+
+.sc-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sc-features li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.sc-links {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.privacy-link {
+    display: block;
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 1rem;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+}
+
+.download-links {
+    display: flex;
+}
+
+.app-store-badge-container {
+    width: 120px;
+    padding: 0.5rem;
+}
+
+.google-play-badge-container{
+    width: 150px;
+}
+
+.app-store-badge {
+    max-width: 100%;
+    height: auto;
+}
+
+.google-play-badge {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.divider {
+    width: 600px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .sc-mockups {
+        height: 300px;
+        width: 300px;
+        gap: 1rem
+    }
+
+    .sc-description {
+        font-size: 1rem;
+    }
+
+    .sc-features h2 {
+        font-size: 1.5rem;
+    }
+
+    .sc-features h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .sc-features p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 660px) {
+
+    .divider {
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .divider {
+        width: 300px;
+    }
+
+}

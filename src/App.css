@@ -9,6 +9,10 @@
   transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
 }
 
+.bg-alt{
+  background-color: var(--bg-alt) !important;
+}
+
 .separator{
   min-height: 30vh;
 }
