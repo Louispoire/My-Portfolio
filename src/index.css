@@ -84,6 +84,10 @@
   --accent-color-rgb: rgb(74, 144, 226);
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   min-width: 320px;

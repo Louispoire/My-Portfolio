@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import useDetectView from '../utils/hooks/useDetectView';
 import { View } from '../../data/constant';
 import { FaMoon, FaSun, FaHeart } from "react-icons/fa";
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +12,8 @@ function Navbar() {
   const [svgSize, setSvgSize] = useState({ width: 50, height: 50 }); // 
   const [showScrollTop, setShowScrollTop] = useState(false);
   const currentView = useDetectView();
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -58,15 +61,26 @@ function Navbar() {
 
 
   // Smooth Scrolling to Sections
+
   const scrollToSection = (id) => {
-    const section = document.getElementById(id);
-    if (section) {
-      section.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start' // Ensure it scrolls properly
-      });
-      setIsOpen(false); // Close menu on mobile
+    const executeScroll = () => {
+      const section = document.getElementById(id);
+      if (section) {
+        section.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    };
+
+    if (location.pathname !== "/") {
+      navigate("/"); // Navigate back to home first
+      setTimeout(() => executeScroll(), 500); // Small delay to ensure page loads
+    } else {
+      executeScroll(); // Already on home, just scroll
     }
+
+    setIsOpen(false); // Close menu after navigation
   };
 
   // Scroll to Top function
@@ -79,9 +93,9 @@ function Navbar() {
       {/* Navbar */}
       <nav className="navbar">
         <ul className="nav-links">
-          <li><a onClick={() => scrollToSection('projects')}>Projects</a></li>
-          <li><a onClick={() => scrollToSection('about')}>About</a></li>
-          <li><a onClick={() => scrollToSection('contact')}>Contact</a></li>
+          <li className='nav-link'><a onClick={() => scrollToSection('projects')}>Projects</a></li>
+          <li className='nav-link'><a onClick={() => scrollToSection('about')}>About</a></li>
+          <li className='nav-link'><a onClick={() => scrollToSection('contact')}>Contact</a></li>
         </ul>
 
         {/* Theme Toggle + Title */}
@@ -94,7 +108,7 @@ function Navbar() {
           )}
 
           {/* Website Title */}
-          <div className="nav-title">Louis-Philippe.</div>
+          <a className="home-button" onClick={() => window.open('/', '_blank', 'noopener,noreferrer')}><div className="nav-title">Louis-Philippe.</div></a>
         </div>
 
         {/* Hamburger Menu */}
@@ -142,7 +156,7 @@ function Navbar() {
             </div>
             <div className='mobile-message'>
               <p>Made with</p>
-              <FaHeart className='heart-icon'/>
+              <FaHeart className='heart-icon' />
               <p>by LP</p>
             </div>
           </motion.div>

@@ -4,11 +4,10 @@ import './Card.css';
 function Card({ title, description, timestamp, image, type, link, androidLink, iOSLink }) {
 
   const navigateToLink = () => {
-    console.log("Button clicked!"); // Debugging
-
-    if (type === 'website') {
       window.open(link, '_blank', 'noopener,noreferrer');
-    } else if (type === 'app') {
+
+    /* CODE TO OPEN APP
+    else if (type === 'app') {
       const userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
       if (/android/i.test(userAgent) && androidLink) {
@@ -23,6 +22,7 @@ function Card({ title, description, timestamp, image, type, link, androidLink, i
     } else {
       console.log("No valid link found.");
     }
+      */
   };
 
   return (
@@ -34,7 +34,7 @@ function Card({ title, description, timestamp, image, type, link, androidLink, i
         <p className="project-card-description">{description}</p>
         {/* Show button for websites and apps */}
         <button className="learn-more-button" onClick={navigateToLink}>
-          {type === 'website' ? 'Learn More' : 'Get the App'}
+          Learn More
         </button>
       </div>
     </div>
