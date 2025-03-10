@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/navbar/Navbar';
 import DynamicFooter from './components/footer/DynamicFooter';
 import AppRoutes from './AppRoutes'; // Extracted Routes
-import ScrollToTop from './components/utils/hooks/ScrollToTop';
+import ScrollToTop from './components/utils/hooks/scrollToTop';
 
 function App() {
   return (
