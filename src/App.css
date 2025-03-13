@@ -17,6 +17,10 @@
   min-height: 30vh;
 }
 
+.about-contact-container{
+  background-color: var(--bg-alt);
+}
+
 @media (max-width: 768px) {
   .section {
     min-height: 75vh; /* Ensure each section fills the viewport */

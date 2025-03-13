@@ -1,0 +1,139 @@
+/* Contact Form Container */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    padding-bottom: 5rem;
+}
+
+/* Form Styling */
+.contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem 2rem 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Form Title */
+.contact-left-title h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.contact-left-title hr {
+    width: 100px;
+    height: 4px;
+    background: var(--accent-color);
+    border: none;
+    margin: 0 auto 1.5rem;
+}
+
+.title-dot{
+    color: var(--accent-color)
+}
+
+/* Input Group */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.input-group textarea{
+    resize: none;
+    width: 100%;
+    min-height: 150px;
+}
+
+/* Ensure inputs and textareas stay within the form */
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 2px solid var(--text-muted);
+    border-radius: 25px; /* Rounded Borders */
+    background: transparent;
+    color: var(--text-primary);
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+}
+
+
+/* Floating Labels */
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: var(--text-secondary);
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+/* Input Focus */
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:valid + label,
+.input-group textarea:valid + label {
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+/* Submit Button */
+.submit-btn {
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: var(--text-muted);
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    border-radius: 25px; /* Rounded Button */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:hover {
+    background: var(--accent-color);
+}
+
+.privacy-policy{
+    padding-top: 2rem;
+    font-size: 0.75rem;
+}
+
+.pp-w3f-link{
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+.pp-w3f-link:hover{
+    cursor: pointer;
+    color: var(--hover-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1.5rem;
+    }
+}

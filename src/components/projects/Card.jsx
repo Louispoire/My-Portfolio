@@ -1,13 +1,19 @@
 import React from 'react';
 import './Card.css';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { ProjectType } from '../../data/constant';
 
-function Card({ title, description, timestamp, image, type, link, androidLink, iOSLink }) {
+function Card({ title, description, timestamp, image, type, link }) {
   const navigate = useNavigate();
 
 
   const navigateToLink = () => {
-    navigate(link);
+    if (type == ProjectType.Website) {
+      window.open(link, '_blank', 'noopener,noreferrer');
+    }
+    else {
+      navigate(link);
+    }
   };
 
   return (
@@ -17,10 +23,12 @@ function Card({ title, description, timestamp, image, type, link, androidLink, i
         <h2 className="project-card-title">{title}</h2>
         <h3>{timestamp}</h3>
         <p className="project-card-description">{description}</p>
-        {/* Show button for websites and apps */}
-        <button className="learn-more-button" onClick={navigateToLink}>
-          Learn More
-        </button>
+        {type === ProjectType.Website && (
+          <button className="learn-more-button" onClick={navigateToLink}>View website</button>
+        )}
+        {type === ProjectType.App && (
+          <button className="learn-more-button" onClick={navigateToLink}>Learn more</button>
+        )}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 80vh;
+    min-height: 75vh;
     padding: 4rem 2rem;
 }
 
@@ -11,7 +11,7 @@
 .about-container {
     display: flex;
     align-items: center;
-    max-width: 1500px;
+    max-width: 1250px;
     width: 100%;
     /*background-color: var(--bg-color);*/
     padding: 2rem;
@@ -27,7 +27,7 @@
 }
 
 .mail-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--text-primary);
 }
 
@@ -35,7 +35,7 @@
     font-weight: 300;
     cursor: pointer;
     color: var(--text-primary);
-    font-size: 2rem;
+    font-size: 1.5rem;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     text-decoration: none;
 }
@@ -57,7 +57,7 @@
 }
 
 .about-text p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.6;
     color: var(--text-primary);
 }

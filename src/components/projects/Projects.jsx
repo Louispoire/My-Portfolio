@@ -4,6 +4,7 @@ import counterIcon from '../../assets/swift_counter_icon.png';
 import simdevWebsiteLight from '../../assets/SIMDEV_logo_light.png';
 import simdevWebsiteDark from '../../assets/SIMDEV_logo_dark.png';
 import Card from './Card';
+import { ProjectType } from '../../data/constant';
 
 function Projects() {
   const [theme, setTheme] = useState(document.documentElement.getAttribute('data-theme') || 'light');
@@ -27,21 +28,21 @@ function Projects() {
     { 
       id: 1,
       title: "SIMDEV's Website", 
-      description: "Made in Typescript, ReactJs, and NodeJs", 
+      description: "Made in Typescript, ReactJs, and NodeJs.", 
       bgColor: "#ff7c7c", 
       image: theme === 'light' ? simdevWebsiteLight : simdevWebsiteDark,
       timestamp: '2023-2024',
-      type: 'website', 
-      link: '/simdev/'
+      type: ProjectType.Website, 
+      link: 'https://simdev.ca'
     },
     { 
       id: 2,
       title: "Swift Counter", 
-      description: "A modern and elegant iOS/Android counter app", 
+      description: "A modern and elegant iOS/Android counter app.", 
       bgColor: "#6c5ce7", 
       image: counterIcon, 
       timestamp: '2024-2025',
-      type: 'app',
+      type: ProjectType.App,
       link: '/swift-counter/'
     }
   ];

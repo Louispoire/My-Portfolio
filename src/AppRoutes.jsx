@@ -7,6 +7,7 @@ import About from './components/about/About';
 import SwiftCounter from './components/projects/pages/swiftcounter/SwiftCounter';
 import Simdev from './components/projects/pages/simdev/Simdev';
 import SCPrivacyPolicy from './components/projects/pages/swiftcounter/SCPrivacyPolicy';
+import ContactForm from './components/contact/ContactForm';
 
 function AppRoutes() {
   return (
@@ -24,10 +25,14 @@ function AppRoutes() {
             </div>
             <div className="separator" />
             <div className="slanted-bg">
-              <div id="about">
-                <About />
+              <div className='about-contact-container'>
+                <div id="about">
+                  <About />
+                </div>
+                <div id="contact">
+                  <ContactForm />
+                </div>
               </div>
-              <div id="contact"></div>
             </div>
           </>
         }
