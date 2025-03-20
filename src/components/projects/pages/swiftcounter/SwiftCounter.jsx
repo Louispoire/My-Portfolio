@@ -20,7 +20,7 @@ function SwiftCounter() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
-        SwiftCounter
+        Swift Counter
       </motion.h1>
 
       <motion.hr
@@ -36,7 +36,7 @@ function SwiftCounter() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
       >
-        SwiftCounter is a simple and elegant app that allows users to create, save, and manage multiple counters effortlessly.
+        Simple and elegant app that allows users to create, save, and manage multiple counters effortlessly.
         Track progress, monitor logs, and customize counters easily.
       </motion.p>
 
@@ -71,30 +71,30 @@ function SwiftCounter() {
       >
         <h2>Key Features</h2>
         <ul>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+          <li>
             <h3><strong>Increment/Decrement:</strong></h3>
-            <p>Use the "+" and "-" buttons to adjust the counter.</p>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+            <p>The increment and decrement functions let users modify counter values within predefined limits. Incrementing increases the counter by a set step, stopping at a max limit if defined; otherwise, it grows indefinitely. Decrementing lowers the value, respecting a min limit or stopping at zero if negatives are disabled. Both functions auto-save changes, provide haptic and sound feedback, and log updates if enabled. These features ensure a customizable and responsive counting experience.</p>
+          </li>
+          <li>
             <h3><strong>Double-Tap:</strong></h3>
-            <p>Quickly set a custom value by double-tapping the counter.</p>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+            <p>The double-tap feature lets users quickly set a counter to a specific value. A prompt appears for manual input, respecting min/max limits and preventing negatives if disabled. Changes are instantly saved and logged if enabled. This tool offers a fast, precise alternative to repeated increments or decrements.</p>
+          </li>
+          <li>
             <h3><strong>Random Number Generator:</strong></h3>
-            <p>Generate a random number with a tap.</p>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+            <p>Users can generate a random value within a set range, ensuring it stays within min/max limits. If unspecified, the default range is 1 to 9,999,999, including negatives if allowed. A confirmation prompt can prevent accidental overwrites. Generated values are instantly saved and logged if enabled.</p>
+          </li>
+          <li>
             <h3><strong>Dice Roller:</strong></h3>
-            <p>Simulate rolling a dice using the built-in dice feature.</p>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+            <p>The Dice Roll feature provides a quick way to generate random dice results for gaming or decisions. Users can select different dice types, with rolls respecting min/max limits. If enabled, rolls are logged. A rolling animation and sound effect enhance the experience.</p>
+          </li>
+          <li>
             <h3><strong>Saved Counters:</strong></h3>
             <p>Save, load, and manage multiple counters.</p>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+          </li>
+          <li>
             <h3><strong>Logs & History:</strong></h3>
             <p>Track all changes with an interactive history log.</p>
-          </motion.li>
+          </li>
         </ul>
       </motion.div>
 
@@ -105,7 +105,8 @@ function SwiftCounter() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
       >
-        <a href="/swift-counter/privacy-policy" className="privacy-link">Privacy Policy</a>
+        <a href="/swift-counter/privacy-policy" className="sc-link">Help and FAQ</a>
+        <a href="/swift-counter/privacy-policy" className="sc-link">Privacy Policy</a>
         <div className="download-links">
           <a href="https://apps.apple.com/app/idYOUR_APP_ID" className="ios-link">
             <div className="app-store-badge-container">

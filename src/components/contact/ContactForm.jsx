@@ -1,6 +1,6 @@
 import React from 'react';
 import './ContactForm.css';
-import { FaPaperPlane } from 'react-icons/fa';
+import { FaPaperPlane, FaEnvelope } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
 function ContactForm() {
@@ -20,14 +20,19 @@ function ContactForm() {
                 transition={{ duration: 0.5, ease: 'easeOut' }}
             >
                 <input type="hidden" name="access_key" value="427b8367-f8f7-4229-84f4-078660f3b0ba" />
-                <div className="contact-left-title">
+                <div className="contact-title">
                     <h2>Get in touch<span className="title-dot">.</span></h2>
                     <hr />
                 </div>
-
+                <div className='contact-section-container'>
+                    <div className='contact-section'>
+                        <FaEnvelope className="mail-icon" />
+                        <p><a className='mail-link' href="mailto:louis-philippe.dev@gmail.com">louisphilippe.dev@gmail.com</a></p>
+                    </div>
+                </div>
                 {/* Input Fields */}
                 <div className="input-group">
-                    <input type="text" name="name" placeholder='Name'required />
+                    <input type="text" name="name" placeholder='Name' required />
                 </div>
 
                 <div className="input-group">
@@ -54,7 +59,7 @@ function ContactForm() {
                     </motion.button>
                 </div>
                 <div className="privacy-policy">
-                    <div>Powered by Web3Forms.</div> 
+                    <div>Powered by Web3Forms.</div>
                     <a className="pp-w3f-link" href="https://web3forms.com/privacy">Privacy Policy</a>
                 </div>
             </motion.form>

@@ -25,33 +25,31 @@ function Projects() {
 
   // Projects Array (image updates dynamically)
   const projects = [
-    { 
+    {
       id: 1,
-      title: "SIMDEV's Website", 
-      description: "Made in Typescript, ReactJs, and NodeJs.", 
-      bgColor: "#ff7c7c", 
+      title: "SIMDEV",
+      description: "Website made in Typescript, ReactJs, and Node.",
+      bgColor: "#ff7c7c",
       image: theme === 'light' ? simdevWebsiteLight : simdevWebsiteDark,
       timestamp: '2023-2024',
-      type: ProjectType.Website, 
+      type: ProjectType.Website,
       link: 'https://simdev.ca'
     },
-    { 
+    {
       id: 2,
-      title: "Swift Counter", 
-      description: "A modern and elegant iOS/Android counter app.", 
-      bgColor: "#6c5ce7", 
-      image: counterIcon, 
+      title: "Swift Counter",
+      description: "A modern and elegant iOS/Android counter app.",
+      bgColor: "#6c5ce7",
+      image: counterIcon,
       timestamp: '2024-2025',
       type: ProjectType.App,
       link: '/swift-counter/'
-    }
+    },
   ];
 
   return (
     <div className='projects-container'>
-      <div>
-        <h1>My projects</h1>
-      </div>
+      <h1 className='project-page-title'>FEATURED PROJECTS</h1>
       <div className="card-grid">
         {projects.map((project) => (
           <Card

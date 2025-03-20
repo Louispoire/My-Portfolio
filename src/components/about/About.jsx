@@ -15,11 +15,6 @@ function About() {
             I love creating simple and modern app, as well as making feature packed websites.
             When I'm not coding, you can find me exploring new technologies and working on creative projects.
           </p>
-          <div className='contact-section'>
-            <FaEnvelope className="mail-icon" /> 
-            <p><a className='mail-link' href="mailto:louis-philippe.dev@gmail.com">louisphilippe.dev@gmail.com</a></p>
-          </div>
-          
         </div>
 
         {/* Animated Profile Picture */}

@@ -30,9 +30,9 @@
 
 .device-frame {
     position: relative;
-    width: 250px;
+    width: 500x;
     /* Adjust based on the frame image */
-    height: 500px;
+    height: 650px;
     /* Adjust based on the frame image */
 }
 
@@ -43,7 +43,7 @@
 
 .sc-features {
     text-align: left;
-    max-width: 600px;
+    width: 100%;
     margin: 2rem 0;
 }
 
@@ -68,7 +68,7 @@
     margin-top: 2rem;
 }
 
-.privacy-link {
+.sc-link {
     display: block;
     font-size: 1rem;
     color: #007bff;
@@ -76,7 +76,7 @@
     margin-bottom: 1rem;
 }
 
-.privacy-link:hover {
+.sc-link:hover {
     text-decoration: underline;
 }
 
