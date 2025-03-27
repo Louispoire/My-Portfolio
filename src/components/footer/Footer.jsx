@@ -1,6 +1,8 @@
 import './Footer.css';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { FaBluesky } from 'react-icons/fa6';
+import { links } from '../../data/constant';
 
 function Footer() {
   const currentYear = new Date().getFullYear();
@@ -46,14 +48,11 @@ function Footer() {
         <a className="footer-link" onClick={() => scrollToSection('contact')}>Contact</a>
       </div>
       <div className="social-media-icons">
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <FaFacebook />
+        <a href={links.github} target="_blank" rel="noopener noreferrer">
+          <FaGithub />
         </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FaTwitter />
-        </a>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <FaInstagram />
+        <a href={links.bluesky} target="_blank" rel="noopener noreferrer">
+          <FaBluesky />
         </a>
       </div>
       <p className="copyright">
