@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     min-height: 75vh;
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
 }
 
 /* About Content Container */
@@ -17,31 +17,6 @@
     padding: 2rem;
     border-radius: 15px;
     /*box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);*/
-}
-
-.contact-section {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-right: 2rem;
-}
-
-.mail-icon {
-    font-size: 1.5rem;
-    color: var(--text-primary);
-}
-
-.mail-link{
-    font-weight: 300;
-    cursor: pointer;
-    color: var(--text-primary);
-    font-size: 1.5rem;
-    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
-    text-decoration: none;
-}
-
-.mail-link:hover{
-    color: var(--hover-color);
 }
 
 /* Text Section */

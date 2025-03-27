@@ -1,68 +1,69 @@
-.privacy-container {
+.terms-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-primary);
-  }
-  
-  .privacy-title {
+}
+
+.terms-title {
     text-align: left;
     font-size: 4rem;
     margin-bottom: 5px;
-  }
-  
-  .privacy-updated {
+}
+
+.terms-updated {
     text-align: left;
     font-size: 1.2rem;
     color: var(--text-muted);
     margin-bottom: 20px;
-  }
-  
-  
-  .privacy-section-title {
+}
+
+
+.terms-section-title {
     font-size: 2rem;
     margin-bottom: 8px;
-  }
-  
-  p, ul {
+}
+
+p,
+ul {
     font-size: 16px;
-  }
-  
-  ul {
+}
+
+ul {
     padding-left: 20px;
-  }
-  
-  ul li {
+}
+
+ul li {
     margin-bottom: 6px;
-  }
-  
-  .pp-mail-link {
+}
+
+.pp-mail-link {
     color: #007bff;
     text-decoration: none;
-  }
-  
-  .pp-mail-link:hover {
+}
+
+.pp-mail-link:hover {
     text-decoration: underline;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .privacy-container {
-      padding: 15px;
+        padding: 15px;
     }
-  
+
     .privacy-title {
-      font-size: 24px;
+        font-size: 24px;
     }
-  
+
     h2 {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
-    p, ul {
-      font-size: 14px;
+
+    p,
+    ul {
+        font-size: 14px;
     }
-  }
-  
+}

@@ -20,7 +20,7 @@ function SwiftCounter() {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
       >
-        SwiftCounter
+        Swift Counter
       </motion.h1>
 
       <motion.hr
@@ -36,7 +36,7 @@ function SwiftCounter() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.3 }}
       >
-        SwiftCounter is a simple and elegant app that allows users to create, save, and manage multiple counters effortlessly.
+        Simple and elegant app that allows users to create, save, and manage multiple counters effortlessly.
         Track progress, monitor logs, and customize counters easily.
       </motion.p>
 
@@ -69,32 +69,34 @@ function SwiftCounter() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
       >
+        <h2>Why Swift Counter?</h2>
+        <p>I made Swift Counter because I was looking for an app that would allow me to count my deaths in a Dark Souls playthrough, and none really had the features I am looking for. Most importantly, I also wanted to sharpen my skills in mobile app development. Swift Counter is made entirely using Flutter (.dart) for both iOS and Android. The data is managed using Flutter Provider, which makes it easy to update the data across the widget tree.</p>
         <h2>Key Features</h2>
         <ul>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+          <li>
             <h3><strong>Increment/Decrement:</strong></h3>
-            <p>Use the "+" and "-" buttons to adjust the counter.</p>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+            <p>Change values by a set step, within optional min/max limits. Auto-saves, haptic/sound feedback, and logging (if enabled) ensure a responsive and customizable experience.</p>
+          </li>
+          <li>
             <h3><strong>Double-Tap:</strong></h3>
-            <p>Quickly set a custom value by double-tapping the counter.</p>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+            <p>Set a custom value instantly via prompt. Respects limits and disables negatives if needed. Saves and logs changes automatically.</p>
+          </li>
+          <li>
             <h3><strong>Random Number Generator:</strong></h3>
-            <p>Generate a random number with a tap.</p>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+            <p>Generates a random number within a defined or default range (1–9,999,999). Honors limits, includes negatives if allowed, with optional confirmation and logging.</p>
+          </li>
+          <li>
             <h3><strong>Dice Roller:</strong></h3>
-            <p>Simulate rolling a dice using the built-in dice feature.</p>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+            <p>Roll various dice types for games or decisions. Respects limits, with optional logging, animation, and sound.</p>
+          </li>
+          <li>
             <h3><strong>Saved Counters:</strong></h3>
             <p>Save, load, and manage multiple counters.</p>
-          </motion.li>
-          <motion.li whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}>
+          </li>
+          <li>
             <h3><strong>Logs & History:</strong></h3>
             <p>Track all changes with an interactive history log.</p>
-          </motion.li>
+          </li>
         </ul>
       </motion.div>
 
@@ -105,7 +107,9 @@ function SwiftCounter() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
       >
-        <a href="/swift-counter/privacy-policy" className="privacy-link">Privacy Policy</a>
+
+        <a href="/swift-counter/privacy-policy" className="sc-link">Privacy Policy</a>
+        <a href="/swift-counter/terms-and-conditions" className="sc-link">Terms and Conditions</a>
         <div className="download-links">
           <a href="https://apps.apple.com/app/idYOUR_APP_ID" className="ios-link">
             <div className="app-store-badge-container">
