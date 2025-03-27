@@ -169,6 +169,7 @@
 /* Responsive */
 @media (max-width: 768px) {
     .contact-form {
-        padding: 1.5rem;
+        margin: 1rem;
     }
+    
 }
