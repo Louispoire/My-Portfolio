@@ -9,17 +9,17 @@ const SCPrivacyPolicy = () => {
 
       <div>
         <h2 className='privacy-section-title'>Definitions</h2>
-        <div>
+        <div className='privacy-elements-container'>
           <h2>Personal Data</h2>
-          <p>‘Personal data’ efers to any information that relates to an identified or identifiable natural person (the “data subject”). An identifiable person is someone who can be recognized, directly or indirectly, through details such as a name, identification number, location data, online identifier, or by factors specific to their physical, physiological, genetic, mental, economic, cultural, or social identity.</p>
-          <p><i>Note: This definition is based on the General Data Protection Regulation (GDPR).</i></p>
+          <p>‘Personal Information’ means any recorded information about an identifiable individual. This includes details such as name, contact information, race, religion, age, education, medical or employment history, personal views or opinions, and identifying numbers.</p>
+          <p><i>Note: This definition is based on the <a href='https://laws-lois.justice.gc.ca/eng/acts/P-21/page-1.html#h-397260'>Privacy Act of Canada.</a></i></p>
         </div>
       </div>
 
-      <div>
+      <div className='.privacy-elements-container'>
         <h2 className='privacy-section-title'>Information Collection And Use</h2>
         <p>
-          Swift Counter does not collect any Personal Data. 
+          Swift Counter does not collect any Personal Information. 
         </p>
       </div>
     </div>

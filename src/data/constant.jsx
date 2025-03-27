@@ -11,8 +11,6 @@ export const ProjectType = {
 };
 
 export const links = {
-  facebook: " ",
-  linkedin: " ",
-  twitter: " ",
-  bluesky: " ",
+  bluesky: "https://bsky.app/profile/lpsimard.bsky.social",
+  github: "https://github.com/Louispoire",
 };

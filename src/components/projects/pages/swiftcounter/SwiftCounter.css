@@ -3,9 +3,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 5rem;
     max-width: 800px;
     margin: 0 auto;
+    font-size: 1.2rem;
 }
 
 .sc-title {
@@ -16,24 +17,17 @@
 
 .sc-description {
     text-align: left;
-    font-size: 1.2rem;
     color: var(--text-primary);
     max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .sc-mockups {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    margin: 2rem 0;
-}
-
-.device-frame {
-    position: relative;
-    width: 500x;
-    /* Adjust based on the frame image */
-    height: 650px;
-    /* Adjust based on the frame image */
+    margin: 4rem 0;
 }
 
 .phone-frame {
@@ -44,14 +38,12 @@
 .sc-features {
     text-align: left;
     width: 100%;
-    margin: 2rem 0;
 }
 
 .sc-features h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
 }
-
 
 .sc-features ul {
     list-style: none;
@@ -59,8 +51,7 @@
 }
 
 .sc-features li {
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 3rem;
 }
 
 .sc-links {
@@ -89,7 +80,7 @@
     padding: 0.5rem;
 }
 
-.google-play-badge-container{
+.google-play-badge-container {
     width: 150px;
 }
 
@@ -103,17 +94,23 @@
     height: auto;
 }
 
-
 .divider {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
 
+    .sc-page {
+        font-size: 1rem;
+        margin: 0 1.5rem;
+    }
+
     .sc-mockups {
         height: 300px;
-        width: 300px;
+        width: 400px;
         gap: 1rem
     }
 
@@ -130,23 +127,8 @@
         margin-bottom: 1rem;
     }
 
-    .sc-features p {
+    .sc-features li {
         font-size: 1rem;
+        margin-bottom: 2rem;
     }
-}
-
-@media (max-width: 660px) {
-
-    .divider {
-        width: 400px;
-    }
-
-}
-
-@media (max-width: 480px) {
-
-    .divider {
-        width: 300px;
-    }
-
 }
