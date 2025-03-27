@@ -69,23 +69,25 @@ function SwiftCounter() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
       >
+        <h2>Why Swift Counter?</h2>
+        <p>I made Swift Counter because I was looking for an app that would allow me to count my deaths in a Dark Souls playthrough, and none really had the features I am looking for. Most importantly, I also wanted to sharpen my skills in mobile app development. Swift Counter is made entirely using Flutter (.dart) for both iOS and Android. The data is managed using Flutter Provider, which makes it easy to update the data across the widget tree.</p>
         <h2>Key Features</h2>
         <ul>
           <li>
             <h3><strong>Increment/Decrement:</strong></h3>
-            <p>The increment and decrement functions let users modify counter values within predefined limits. Incrementing increases the counter by a set step, stopping at a max limit if defined; otherwise, it grows indefinitely. Decrementing lowers the value, respecting a min limit or stopping at zero if negatives are disabled. Both functions auto-save changes, provide haptic and sound feedback, and log updates if enabled. These features ensure a customizable and responsive counting experience.</p>
+            <p>Change values by a set step, within optional min/max limits. Auto-saves, haptic/sound feedback, and logging (if enabled) ensure a responsive and customizable experience.</p>
           </li>
           <li>
             <h3><strong>Double-Tap:</strong></h3>
-            <p>The double-tap feature lets users quickly set a counter to a specific value. A prompt appears for manual input, respecting min/max limits and preventing negatives if disabled. Changes are instantly saved and logged if enabled. This tool offers a fast, precise alternative to repeated increments or decrements.</p>
+            <p>Set a custom value instantly via prompt. Respects limits and disables negatives if needed. Saves and logs changes automatically.</p>
           </li>
           <li>
             <h3><strong>Random Number Generator:</strong></h3>
-            <p>Users can generate a random value within a set range, ensuring it stays within min/max limits. If unspecified, the default range is 1 to 9,999,999, including negatives if allowed. A confirmation prompt can prevent accidental overwrites. Generated values are instantly saved and logged if enabled.</p>
+            <p>Generates a random number within a defined or default range (1–9,999,999). Honors limits, includes negatives if allowed, with optional confirmation and logging.</p>
           </li>
           <li>
             <h3><strong>Dice Roller:</strong></h3>
-            <p>The Dice Roll feature provides a quick way to generate random dice results for gaming or decisions. Users can select different dice types, with rolls respecting min/max limits. If enabled, rolls are logged. A rolling animation and sound effect enhance the experience.</p>
+            <p>Roll various dice types for games or decisions. Respects limits, with optional logging, animation, and sound.</p>
           </li>
           <li>
             <h3><strong>Saved Counters:</strong></h3>
@@ -105,8 +107,9 @@ function SwiftCounter() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.6 }}
       >
-        <a href="/swift-counter/privacy-policy" className="sc-link">Help and FAQ</a>
+
         <a href="/swift-counter/privacy-policy" className="sc-link">Privacy Policy</a>
+        <a href="/swift-counter/terms-and-conditions" className="sc-link">Terms and Conditions</a>
         <div className="download-links">
           <a href="https://apps.apple.com/app/idYOUR_APP_ID" className="ios-link">
             <div className="app-store-badge-container">

@@ -8,6 +8,7 @@ import SwiftCounter from './components/projects/pages/swiftcounter/SwiftCounter'
 import Simdev from './components/projects/pages/simdev/Simdev';
 import SCPrivacyPolicy from './components/projects/pages/swiftcounter/SCPrivacyPolicy';
 import ContactForm from './components/contact/ContactForm';
+import SCTerms from './components/projects/pages/swiftcounter/SCTerms';
 
 function AppRoutes() {
   return (
@@ -42,6 +43,7 @@ function AppRoutes() {
       <Route path="/simdev" element={<Simdev />} />
       <Route path="/swift-counter" element={<SwiftCounter />} />
       <Route path="/swift-counter/privacy-policy" element={<SCPrivacyPolicy />} />
+      <Route path="/swift-counter/terms-and-conditions" element={<SCTerms />} />
     </Routes>
   );
 }
