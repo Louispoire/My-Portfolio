@@ -106,16 +106,22 @@
     .sc-page {
         font-size: 1rem;
         margin: 0 1.5rem;
+        padding: 2rem 0;
     }
 
     .sc-mockups {
-        height: 300px;
-        width: 400px;
-        gap: 1rem
+        height: 225px;
+        width: 300px;
+        gap: 1rem;
+        margin: 2rem 2rem 3rem 2rem;
     }
 
     .sc-description {
         font-size: 1rem;
+    }
+
+    .sc-features {
+        margin-top: 1.5rem;
     }
 
     .sc-features h2 {
@@ -129,6 +135,6 @@
 
     .sc-features li {
         font-size: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
     }
 }

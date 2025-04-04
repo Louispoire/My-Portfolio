@@ -92,20 +92,23 @@ function SwiftCounter() {
 
       {/* Features Section */}
       <motion.div
+        className='sc-description'
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <h2>Why Swift Counter?</h2>
+        <p>I made Swift Counter because I was looking for an app that would allow me to count my deaths in a Dark Souls playthrough, and none really had the features I am looking for. Most importantly, I also wanted to sharpen my skills in mobile app development. Swift Counter is made entirely using Flutter (.dart) for both iOS and Android. The data is managed using Flutter Provider, which makes it easy to update the data across the widget tree.</p>
+      </motion.div>
+
+      {/* Features Section */}
+      <motion.div
         className="sc-features"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5 }}
       >
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          <h2>Why Swift Counter?</h2>
-          <p>I made Swift Counter because I was looking for an app that would allow me to count my deaths in a Dark Souls playthrough, and none really had the features I am looking for. Most importantly, I also wanted to sharpen my skills in mobile app development. Swift Counter is made entirely using Flutter (.dart) for both iOS and Android. The data is managed using Flutter Provider, which makes it easy to update the data across the widget tree.</p>
-        </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
