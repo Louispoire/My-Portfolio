@@ -21,7 +21,7 @@ function Card({ title, description, timestamp, image, type, link }) {
       <img className="project-card-image" src={image} alt={title} />
       <div className="project-card-content">
         <h2 className="project-card-title">{title}</h2>
-        <h3>{timestamp}</h3>
+        <h3 className='project-card-subtitle'>{timestamp}</h3>
         <p className="project-card-description">{description}</p>
         {type === ProjectType.Website && (
           <button className="learn-more-button" onClick={navigateToLink}>View website</button>
