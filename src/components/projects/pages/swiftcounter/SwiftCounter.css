@@ -35,6 +35,12 @@
     height: auto;
 }
 
+.sc-reason{
+    text-align: left;
+    color: var(--text-primary);
+    width: 100%;
+}
+
 .sc-features {
     text-align: left;
     width: 100%;
