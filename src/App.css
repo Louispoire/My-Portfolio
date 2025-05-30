@@ -2,10 +2,6 @@
   transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
 }
 
-.html {
-  scroll-behavior: smooth;
-}
-
 .section {
   min-height: 100vh; /* Ensure each section fills the viewport */
   display: flex;
