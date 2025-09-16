@@ -1,4 +1,3 @@
-import React from 'react';
 import './SCTerms.css';
 
 const SCTerms = () => {
@@ -38,7 +37,7 @@ const SCTerms = () => {
             <div className='terms-elements-container'>
                 <h2 className='terms-section-title'>5. No Liability</h2>
                 <p>
-                    Swift Counter is provided "as is." The developer is not liable for any issues arising from its use.
+                    Swift Counter is provided &quot;as is.&quot; The developer is not liable for any issues arising from its use.
                 </p>
             </div>
 
