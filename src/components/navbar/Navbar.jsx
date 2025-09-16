@@ -10,7 +10,7 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
   const [svgSize, setSvgSize] = useState({ width: 50, height: 50 }); // 
-  const [showScrollTop, setShowScrollTop] = useState(false);
+  //const [showScrollTop, setShowScrollTop] = useState(false);
   const currentView = useDetectView();
   const navigate = useNavigate();
   const location = useLocation();
@@ -84,9 +84,11 @@ function Navbar() {
   };
 
   // Scroll to Top function
+  /*
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+  */
 
   return (
     <>

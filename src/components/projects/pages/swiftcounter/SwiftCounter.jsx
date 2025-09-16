@@ -1,10 +1,9 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import './SwiftCounter.css';
 import screenshot1 from '../../../../assets/screenshot-swiftcounter-1.png';
 import screenshot2 from '../../../../assets/screenshot-swiftcounter-2.png';
 import appStoreBadgeBlack from '../../../../assets/download-button/ios/ios-download-black.svg';
-import googlePlayBadge from '../../../../assets/download-button/android/google-play-badge.png';
+//import googlePlayBadge from '../../../../assets/download-button/android/google-play-badge.png';
 
 function SwiftCounter() {
 
@@ -149,11 +148,15 @@ function SwiftCounter() {
               <motion.img src={appStoreBadgeBlack} alt="Download on App Store" className="app-store-badge" whileHover={{ scale: 1.05 }} />
             </div>
           </a>
+          {
+            /*
           <div className="google-play-badge-container">
             <a href="https://play.google.com/store/apps/details?id=YOUR_APP_PACKAGE" className="android-link">
               <motion.img src={googlePlayBadge} alt="Get it on Google Play" className="google-play-badge" whileHover={{ scale: 1.05 }} />
             </a>
           </div>
+          */
+          }
         </div>
       </motion.div>
     </motion.div>

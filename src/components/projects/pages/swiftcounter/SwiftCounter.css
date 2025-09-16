@@ -77,12 +77,14 @@
     text-decoration: underline;
 }
 
+/*
 .download-links {
-    display: flex;
+    /*display: flex;
 }
+*/
 
 .app-store-badge-container {
-    width: 120px;
+    /*width: 120px;*/
     padding: 0.5rem;
 }
 
