@@ -11,7 +11,7 @@ const SCPrivacyPolicy = () => {
         <div className='privacy-elements-container'>
           <h2>Personal Data</h2>
           <p>‘Personal Information’ means any recorded information about an identifiable individual. This includes details such as name, contact information, race, religion, age, education, medical or employment history, personal views or opinions, and identifying numbers.</p>
-          <p><i>Note: This definition is based on the <a href='https://laws-lois.justice.gc.ca/eng/acts/P-21/page-1.html#h-397260'>Privacy Act of Canada.</a></i></p>
+          <p><i>Note: This definition is based on the <a href='https://laws-lois.justice.gc.ca/fra/lois/p-8.6/page-1.html#h-407067'>Personal Information Protection and Electronic Documents Act</a></i></p>
         </div>
       </div>
 
