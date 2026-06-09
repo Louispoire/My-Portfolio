@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import './Projects.css';
 import counterIcon from '../../assets/swift_counter_icon.png';
+import meetziIcon from '../../assets/Meetzi.png'
 import simdevWebsiteLight from '../../assets/SIMDEV_logo_light.png';
 import simdevWebsiteDark from '../../assets/SIMDEV_logo_dark.png';
 import Card from './Card';
@@ -45,6 +46,16 @@ function Projects() {
       type: ProjectType.App,
       link: '/swift-counter/'
     },
+    {
+      id: 3,
+      title: "Meetzi",
+      description: "Feature packed scheduling software.",
+      bgColor: "#ffffff",
+      image: meetziIcon,
+      timestamp: '2025-2026',
+      type: ProjectType.Website,
+      link: 'https://meetzi.co'
+    },
   ];
 
   return (
@@ -57,6 +68,7 @@ function Projects() {
             title={project.title}
             description={project.description}
             timestamp={project.timestamp}
+            bg={project.bgColor}
             image={project.image}
             type={project.type}
             link={project.link}
